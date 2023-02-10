@@ -1,0 +1,22 @@
+fzf
+mblaze
+muvm
+age-sep
+himalaya
+cdist
+svlog
+tex-fmt
+spiped
+vomit-sync
+typst
+yazi
+zfs
+yash
+arcan
+nango
+papis
+nix
+duplicity
+wlr-xdg-portal
+nbterm
+badwolf, netsurf->NeoSurf, ladybird, litehtml

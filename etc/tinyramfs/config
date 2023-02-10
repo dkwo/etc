@@ -1,0 +1,12 @@
+compress="gzip -9"
+hooks="eudev,luks,lvm"
+# hooks="eudev,asahi"
+hostonly=yes
+# blkid -o value -s UUID /dev/nvme0n1p2
+luks_root="UUID=xxx"
+luks_name=cryptroot 
+luks_discard=yes
+lvm_group=cryptroot 
+lvm_name=root
+# blkid /dev/cryptroot/root
+root="UUID=xxx"

@@ -1,0 +1,5 @@
+# <file system>		<dir>	<type>	<options>		<dump>	<pass>
+/dev/cryptroot/root	/	ext4	defaults		0	1
+/dev/cryptroot/home	/home	ext4	defaults		0	2
+tmpfs			/tmp	tmpfs	defaults,nosuid,nodev	0	0
+UUID=xxx		/boot	vfat 	defaults		0 	2
