@@ -13,6 +13,7 @@ biber
 bibiman
 bottom
 calcurse
+chezmoi
 chrony
 cronie
 cryptsetup
@@ -48,6 +49,7 @@ linux-mainline
 llvm
 lvm2
 lynx
+lz4
 mdevd
 mesa-dri
 mpv
@@ -90,6 +92,7 @@ turnstile
 unzip
 vis
 void-docs
+vv
 w3m
 waylock
 wbg
