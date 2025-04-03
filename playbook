@@ -22,10 +22,6 @@ XBPS_ARCH=$ARCH xbps-install -S -r /mnt -R "$REPO" base-system cryptsetup lvm2 e
 xi -S $(cat somefile) vis git tmux htop terminus-font opendoas xtools
 setfont ter-132n
 cryptsetup -y -v luksFormat /dev/nvme0n1p2
-cryptsetup open /dev/sda1 voidvm
-mkfs.fat -F 32 /dev/nvmenvme0n1p1
-mkdir -p /mnt/boot
-mount /dev/nvme0n1p1 /mnt/boot
 # delete /etc/crypttab
 # e2fsprogs relabel
 blkid -o value -s UUID /dev/mapper/cryptroot, /dev/nvme0n1p2
