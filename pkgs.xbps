@@ -6,6 +6,21 @@ snooze
 socklog-void
 opendoas
 dinit
+seatd
+wireless-regdb
+acl-progs
+psmisc
+lvm2
+
+
+void-docs
+lz4
+mdevd
+pam_uaccess
+xmirror
+cups
+cups-filters
+alsa-utils
 
 
 terminus-font
@@ -24,19 +39,6 @@ xtools
 lf
 
 
-acl-progs
-lz4
-mdevd
-pam_uaccess
-psmisc
-void-docs
-xmirror
-wireless-regdb
-cups
-cups-filters
-alsa-utils
-
-
 acpica-utils
 alsa-firmware
 efibootmgr
@@ -52,8 +54,13 @@ linux-firmware-network
 linux-mainline
 tinyramfs
 llvm
-lvm2
 mesa-dri
+
+
+asahi-base
+asahi-audio
+mesa-asahi
+tinyramfs
 
 
 keepassxc
@@ -66,6 +73,7 @@ zulip-term
 weechat
 mpv
 firefox
+dejavu-fonts-ttf
 transmission-qt
 sfeed_curses
 android-file-transfer-linux-cli
@@ -94,7 +102,6 @@ biber
 bibiman
 
 
-seatd
 slurp
 qt5-wayland
 qt6-wayland
