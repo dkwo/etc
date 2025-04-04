@@ -1,4 +1,3 @@
-base-system
 chrony
 cronie
 cryptsetup
@@ -26,7 +25,6 @@ lf
 
 
 acl-progs
-acpica-utils
 lz4
 mdevd
 pam_uaccess
@@ -36,10 +34,11 @@ xmirror
 wireless-regdb
 cups
 cups-filters
-
-
-alsa-firmware
 alsa-utils
+
+
+acpica-utils
+alsa-firmware
 efibootmgr
 systemd-boot-efistub
 intel-media-driver

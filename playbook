@@ -5,21 +5,19 @@ rsync -P -a --delete --exclude={".cache/*",".local/share/Trash/*","Projects/void
 fstrim / (run weekly by daemon), fwupd, recalibrate tlp
 vgchange -ay
 -----------
-services: dhcpcd seatd udevd wpa_supplicant
+services: dhcpcd udevd wpa_supplicant
+ seatd turnstiled
  cronie chronyd nanoklogd socklog-unix
- acpid tlp turnstiled
+ acpid tlp
 groups: wheel plugdev socklog _seatd
 optdepends: gsfonts dbus (zathura), libfido2 (hidapi), qt6-wayland
 t460s:	cp /lib/udev/hwdb.d/60-keyboard.hwdb /etc/udev/hwdb.d/ and comment out zoom
-	alsa-firmware intel-ucode linux-firmware efibootmgr sbctl
 	vt-x enabled in bios seems to prevent full shutdown
 -----------
 # wlsunset, timezone, wpa_supplicant need to know country
 -----------
-ARCH=x86_64-musl
-REPO=https://alpha.de.repo.voidlinux.org/current/musl
-XBPS_ARCH=$ARCH xbps-install -S -r /mnt -R "$REPO" base-system cryptsetup lvm2 efibootmgr
-xi -S $(cat somefile) vis git tmux htop terminus-font opendoas xtools
+XBPS_ARCH=$ARCH xbps-install -S -r /mnt -R $REPO base-system cryptsetup
+xi -S $(cat somefile)
 setfont ter-132n
 cryptsetup -y -v luksFormat /dev/nvme0n1p2
 # delete /etc/crypttab
