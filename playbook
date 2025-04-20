@@ -1,10 +1,3 @@
-cryptsetup open /dev/sda1 cryptciccio
-mount /dev/mapper/cryptciccio ~/mnt
-rsync -aAXv --delete full-home/. /home/XXX
-rsync -P -a --delete --exclude={".cache/*",".local/share/Trash/*","Projects/void-*/*","mnt/*"} /home/XXX/. full-home
-fstrim / (run weekly by daemon), fwupd, recalibrate tlp
-vgchange -ay
------------
 services: dhcpcd udevd wpa_supplicant
  seatd turnstiled
  cronie chronyd nanoklogd socklog-unix
@@ -20,7 +13,12 @@ XBPS_ARCH=$ARCH xbps-install -S -r /mnt -R $REPO base-system cryptsetup
 xi -S $(cat somefile)
 setfont ter-132n
 cryptsetup -y -v luksFormat /dev/nvme0n1p2
+# evaluate also
+cryptsetup -v --cipher aes-xts-plain64 --key-size 512 --use-urandom --verify-passphrase luksFormat /dev/sdX
 # delete /etc/crypttab
 # e2fsprogs relabel
 blkid -o value -s UUID /dev/mapper/cryptroot, /dev/nvme0n1p2
 # set timezone, root and user password/groups/shell
+-----------
+fstrim / (run weekly by daemon), fwupd, recalibrate tlp
+vgchange -ay
