@@ -26,6 +26,8 @@ alsa-utils
 
 
 # basic tools
+xtools
+curl
 terminus-font
 bottom
 chezmoi
@@ -65,8 +67,9 @@ mesa-dri
 # asahi specific
 asahi-base
 asahi-audio
-mesa-asahi
 tinyramfs
+mesa?
+asahi-macsmc-battery-udev
 
 
 # password managers

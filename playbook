@@ -7,18 +7,16 @@ optdepends: gsfonts dbus (zathura), libfido2 (hidapi)
 t460s:	cp /lib/udev/hwdb.d/60-keyboard.hwdb /etc/udev/hwdb.d/ and comment out zoom
 	vt-x enabled in bios seems to prevent full shutdown
 -----------
-# wlsunset, timezone, wpa_supplicant need to know country
+# wlsunset, timezone, wpa_supplicant: country
 -----------
 XBPS_ARCH=$ARCH xbps-install -S -r /mnt -R $REPO base-system cryptsetup
 xi -S $(cat somefile)
 setfont ter-132n
 cryptsetup -y -v luksFormat /dev/nvme0n1p2
-# evaluate also
-cryptsetup -v --cipher aes-xts-plain64 --key-size 512 --use-urandom --verify-passphrase luksFormat /dev/sdX
-# delete /etc/crypttab
 # e2fsprogs relabel
 blkid -o value -s UUID /dev/mapper/cryptroot, /dev/nvme0n1p2
 # set timezone, root and user password/groups/shell
 -----------
 fstrim / (run weekly by daemon), fwupd, recalibrate tlp
 vgchange -ay
+curl -H 'Accept: application/vnd.github.v3.raw' https://api.github.com/repos/dkwo/dotfiles/contents/Readme.md
