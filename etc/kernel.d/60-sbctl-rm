@@ -1,17 +1,13 @@
 #!/bin/sh
-# delete EFI unified kernel image
 # input is kernel version, e.g. 6.7.3_1
 set -e
 VERSION="$2"
 EFI="/boot"
-UKI="linux-${VERSION}.efi"
+UKI="initramfs-${VERSION}.img"
+
 [ -x /usr/bin/sbctl ] || exit 0
 [ -x /usr/bin/efibootmgr ] || exit 0
-rm -f ${EFI}/${UKI}
-rm -f ${EFI}/config-${VERSION}
-rm -f ${EFI}/vmlinuz-${VERSION}
-# this is done in vkpurge
-# rm -rf /usr/lib/modules/${VERSION}
+
 sbctl remove-file ${EFI}/${UKI}
 hexnum=$(efibootmgr | grep "Void Linux (uki) with kernel ${VERSION}" | cut -c "5-8")
 [ "${hexnum}" ] && efibootmgr -Bq -b ${hexnum}

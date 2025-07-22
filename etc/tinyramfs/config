@@ -1,6 +1,6 @@
-compress="gzip -9"
-hooks="eudev,luks,lvm"
-# hooks="eudev,asahi"
+# compress="gzip -9"
+compress="lz4 -l -9"
+hooks="eudev,luks,lvm,ucode,uki"
 hostonly=yes
 # blkid -o value -s UUID /dev/nvme0n1p2
 luks_root="UUID=xxx"
@@ -10,3 +10,7 @@ lvm_group=cryptroot
 lvm_name=root
 # blkid /dev/cryptroot/root
 root="UUID=xxx"
+uki_cmdline="loglevel=4 init_on_free=1"
+uki_efistub="/usr/lib/systemd/boot/efi/linuxx64.efi.stub"
+uki_kernel="/boot/vmlinuz-$kernel"
+uki_only=true

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+VERSION="$2"
+DISK="/dev/nvme0n1"
+PART=1
+EFI="/boot"
+UKI="initramfs-${VERSION}.img"
+
+[ -x /usr/bin/sbctl ] || exit 0
+sbctl sign -s "${EFI}/${UKI}"
+[ -x /usr/bin/efibootmgr ] || exit 0
+efibootmgr \
+	--create \
+	--disk "${DISK}"  \
+	--part "${PART}" \
+	--label "Void Linux (uki) with kernel ${VERSION}" \
+	--loader "/${UKI}"
