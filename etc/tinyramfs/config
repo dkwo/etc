@@ -12,5 +12,5 @@ lvm_name=root
 root="UUID=xxx"
 uki_cmdline="loglevel=4 init_on_free=1"
 uki_efistub="/usr/lib/systemd/boot/efi/linuxx64.efi.stub"
-uki_kernel="/boot/vmlinuz-$kernel"
+uki_kernel="/boot/vmlinuz-$kernel" or "/usr/lib/modules/${kernel}/vmlinuz"
 uki_only=true
