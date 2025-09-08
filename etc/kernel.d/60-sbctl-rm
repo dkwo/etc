@@ -3,7 +3,7 @@
 set -e
 VERSION="$2"
 EFI="/boot"
-UKI="initramfs-${VERSION}.img"
+UKI="linux-${VERSION}.efi"
 
 [ -x /usr/bin/sbctl ] || exit 0
 [ -x /usr/bin/efibootmgr ] || exit 0

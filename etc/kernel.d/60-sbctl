@@ -4,7 +4,7 @@ VERSION="$2"
 DISK="/dev/nvme0n1"
 PART=1
 EFI="/boot"
-UKI="initramfs-${VERSION}.img"
+UKI="linux-${VERSION}.efi"
 
 [ -x /usr/bin/sbctl ] || exit 0
 sbctl sign -s "${EFI}/${UKI}"
