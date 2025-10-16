@@ -66,6 +66,7 @@ asahi-audio
 tinyramfs
 mesa
 asahi-macsmc-battery-udev
+limine
 
 
 # password managers
