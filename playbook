@@ -1,7 +1,7 @@
-services: dhcpcd udevd wpa_supplicant
+services: dhcpcd* udevd wpa_supplicant*
  seatd turnstiled
  cronie chronyd nanoklogd socklog-unix
- acpid tlp
+ acpid (tlp)
 groups: wheel plugdev socklog _seatd
 optdepends: gsfonts dbus (zathura), libfido2 (hidapi)
 t460s:	cp /lib/udev/hwdb.d/60-keyboard.hwdb /etc/udev/hwdb.d/ and comment out zoom

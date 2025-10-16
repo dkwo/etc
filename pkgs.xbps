@@ -11,17 +11,13 @@ seatd
 wireless-regdb
 acl-progs
 psmisc
-lvm2
 
 
 # less often used packages
 void-docs
 lz4
 mdevd
-pam_uaccess
 xmirror
-cups
-cups-filters
 alsa-utils
 
 
@@ -68,7 +64,7 @@ mesa-dri
 asahi-base
 asahi-audio
 tinyramfs
-mesa?
+mesa
 asahi-macsmc-battery-udev
 
 
