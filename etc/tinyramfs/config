@@ -1,6 +1,6 @@
 # compress="gzip -9"
 compress="lz4 -l -9"
-hooks="eudev,luks,lvm,ucode,uki"
+hooks="eudev,luks,lvm,ucode,uki,asahi"
 hostonly=yes
 # blkid -o value -s UUID /dev/nvme0n1p2
 luks_root="UUID=xxx"
