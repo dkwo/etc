@@ -1,4 +1,4 @@
-# void-linux system packages
+# system packages
 chrony
 cronie
 cryptsetup
@@ -24,7 +24,6 @@ alsa-utils
 # basic tools
 xtools
 curl
-terminus-font
 bottom
 chezmoi
 git
@@ -36,12 +35,22 @@ zsh
 tmux
 unzip
 vis
-xtools
 lf
 xdg-utils
 
 
-# t460s specific
+# misc
+terminus-font
+dejavu-fonts-ttf
+calcurse
+sfeed_curses
+transmission-qt
+firefox
+android-file-transfer-linux-cli
+libmtp
+
+
+# t460s
 acpica-utils
 alsa-firmware
 efibootmgr
@@ -60,7 +69,7 @@ llvm
 mesa-dri
 
 
-# asahi specific
+# asahi
 asahi-base
 asahi-audio
 tinyramfs
@@ -73,23 +82,24 @@ limine
 keepassxc
 libfido2
 qrencode
+passage
+pizauth
 
 
 # multimedia
 yt-dlp
-zulip-term
-weechat
 mpv
-firefox
-dejavu-fonts-ttf
-transmission-qt
-sfeed_curses
-android-file-transfer-linux-cli
-libmtp
 fend
 fim
 imv
 vv
+
+
+# communications
+Signal-Desktop
+mullvadvpn
+weechat
+zulip-term
 
 
 # science
@@ -140,8 +150,5 @@ msmtp
 mutt
 notmuch
 w3m
-passage
 age
-pizauth
 lynx
-calcurse
