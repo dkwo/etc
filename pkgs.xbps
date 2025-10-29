@@ -23,19 +23,18 @@ alsa-utils
 
 # basic tools
 xtools
-curl
+htop
 bottom
+curl
 chezmoi
 git
-htop
 rsync
-duf
 syncthing
 zsh
-tmux
-unzip
-vis
+duf
 lf
+tmux
+vis
 xdg-utils
 
 
@@ -74,7 +73,7 @@ asahi-base
 asahi-audio
 tinyramfs
 mesa
-asahi-macsmc-battery-udev
+tlp
 limine
 
 
@@ -84,6 +83,7 @@ libfido2
 qrencode
 passage
 pizauth
+age
 
 
 # multimedia
@@ -150,5 +150,4 @@ msmtp
 mutt
 notmuch
 w3m
-age
 lynx
