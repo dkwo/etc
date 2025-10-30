@@ -11,6 +11,7 @@ seatd
 wireless-regdb
 acl-progs
 psmisc
+apparmor?
 
 
 # less often used packages
@@ -89,10 +90,10 @@ age
 # multimedia
 yt-dlp
 mpv
-fend
-fim
-imv
-vv
+fend?
+fim?
+imv?
+vv?
 
 
 # communications
@@ -122,7 +123,7 @@ bibiman
 
 
 # wayland
-qt5-wayland
+qt5-wayland?
 qt6-wayland
 wlr-randr
 river

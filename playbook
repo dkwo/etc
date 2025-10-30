@@ -8,6 +8,7 @@ groups: wheel plugdev socklog _seatd
 optdepends: gsfonts dbus (zathura), libfido2 (hidapi)
 t460s:	cp /lib/udev/hwdb.d/60-keyboard.hwdb /etc/udev/hwdb.d/ and comment out zoom
 	vt-x enabled in bios seems to prevent full shutdown
+cmdline: loglevel=4 apparmor=1 security=apparmor init_on_free=1
 -----------
 # wlsunset, timezone, wpa_supplicant: country
 -----------
