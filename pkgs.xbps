@@ -81,7 +81,6 @@ limine
 # password managers
 keepassxc
 libfido2
-qrencode
 passage
 pizauth
 age
