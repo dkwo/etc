@@ -1,0 +1,11 @@
+# Site-specific additions and overrides for 'usr.bin.dhcpcd'
+
+/usr/libexec/dhcpcd-run-hooks ix,
+/usr/libexec/dhcpcd-run-hooks r,
+/usr/libexec/dhcpcd-hooks/ r,
+/usr/libexec/dhcpcd-hooks/** r,
+
+/usr/bin/{mkdir,rm,chmod,sed,cmp,cat} ix,
+
+/run/dhcpcd/** rw,
+/etc/resolv.conf{,*} rw,
