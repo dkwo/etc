@@ -3,7 +3,6 @@ landrun
 island
 pam_uaccess
 mullvadvpn
-texlive
 bibigo
 xcursor-plan9
 fend?
@@ -123,6 +122,7 @@ zathura-ps
 aspell
 aspell-en
 biber
+texlive
 
 
 # wayland
