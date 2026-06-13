@@ -1,0 +1,15 @@
+type = process
+command = /usr/bin/wpa_supplicant -i wlp1s0f0 -c /etc/wpa_supplicant/wpa_supplicant.conf -D nl80211
+log-type = buffer
+restart = false
+run-as = _wpas
+
+depends-on: wpa_supplicant-pre
+depends-on: early-filesystems
+depends-on: udevd
+depends-on: rootrw
+waits-for: udev-settle
+
+options: no-new-privs
+capabilities = ^cap_net_raw,^cap_net_admin
+# securebits = noroot noroot-locked

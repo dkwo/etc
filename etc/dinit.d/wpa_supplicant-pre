@@ -1,0 +1,3 @@
+type = scripted
+command = /usr/bin/install -m 0750 -g _wpas -o _wpas -d /run/wpa_supplicant
+depends-on = rcboot

@@ -1,0 +1,12 @@
+type = process
+env-file = mullvad-env
+capabilities = ^cap_net_admin,^cap_net_raw
+securebits = keep-caps-locked no-setuid-fixup no-setuid-fixup-locked
+options: no-new-privs
+command = /usr/bin/mullvad-daemon
+log-type = buffer
+restart = false
+
+depends-on: udevd
+depends-on: rootrw
+waits-for: udev-settle

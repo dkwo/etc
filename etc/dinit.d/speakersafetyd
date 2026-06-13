@@ -1,0 +1,14 @@
+run-as =_speakersafetyd
+capabilities = ^cap_sys_nice
+type = process
+log-type = buffer
+restart = true
+
+depends-on: speakersafetyd-pre
+depends-on: early-filesystems
+depends-on: udevd
+depends-on: rootrw
+waits-for: udev-settle
+
+options: no-new-privs
+command = /usr/bin/speakersafetyd -c /usr/share/speakersafetyd/ -m 7

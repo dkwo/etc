@@ -1,0 +1,3 @@
+type = scripted
+command = /usr/bin/install -m 700 -g _speakersafetyd -o _speakersafetyd -d /run/speakersafetyd
+depends-on = rcboot

@@ -1,0 +1,4 @@
+type = process
+command = /usr/bin/seatd -g _seatd
+log-type = buffer
+depends-on: loginready
