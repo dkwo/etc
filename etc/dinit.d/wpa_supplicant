@@ -12,4 +12,3 @@ waits-for: udev-settle
 
 options: no-new-privs
 capabilities = ^cap_net_raw,^cap_net_admin
-# securebits = noroot noroot-locked

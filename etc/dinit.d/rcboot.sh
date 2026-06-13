@@ -5,9 +5,6 @@ umask 0077
 set -e
 
 if [ "$1" != "stop" ]; then
-
-  # todo: cgroup v2
-
   # cleanup
   rm -rf /tmp/* /tmp/.[!.]* /tmp/..?*
 

@@ -1,5 +1,5 @@
 type = process
-command = /usr/bin/dhcpcd -B -M --logfile /var/log/dhcpcd-service.log wlp1s0f0
+command = /usr/bin/dhcpcd -B -M wlp1s0f0
 log-type = buffer
 restart = false
 
@@ -7,6 +7,5 @@ depends-on: wpa_supplicant
 depends-on: dhcpcd-pre
 
 run-as = _dhcpcd
-# same issues as wpa_supplicant
 options: no-new-privs
 capabilities = ^cap_net_raw,^cap_net_admin,^cap_net_bind_service
