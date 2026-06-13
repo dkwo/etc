@@ -1,17 +1,16 @@
 # not packaged or under evaluation
 landrun
+island
 pam_uaccess
+mullvadvpn
+texlive
+bibigo
+xcursor-plan9
 fend?
 fim?
 vv?
-mullvadvpn
-texlive
-texlive-bibtexextra
-texlive-latexextra
-texlive-latexmk
-texlive-science
 qt5-wayland?
-xcursor-plan9
+apparmor?
 
 
 # system packages
@@ -27,7 +26,6 @@ seatd
 wireless-regdb
 acl-progs
 psmisc
-apparmor?
 
 
 # less often used packages
@@ -125,7 +123,6 @@ zathura-ps
 aspell
 aspell-en
 biber
-bibiman
 
 
 # wayland
