@@ -15,5 +15,6 @@ if [ "$1" = start ]; then
     mountpoint -q /dev/pts || mount -o mode=0620,gid=5,nosuid,noexec -n -t devpts devpts /dev/pts
     mountpoint -q /dev/shm || mount -o mode=1777,nosuid,nodev -n -t tmpfs shm /dev/shm
     mountpoint -q /sys/kernel/security || mount -n -t securityfs securityfs /sys/kernel/security
+    mount -o nosuid,noexec,nodev,remount,hidepid=1 -t proc proc /proc
 
 fi
