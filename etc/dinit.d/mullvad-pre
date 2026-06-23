@@ -1,0 +1,5 @@
+type = scripted
+command = /usr/bin/modprobe tun
+restart = false
+
+depends-on: rootrw
