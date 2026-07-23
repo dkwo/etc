@@ -4,7 +4,7 @@ type = process
 log-type = buffer
 restart = true
 
-depends-on: speakersafetyd-pre
+depends-ms: speakersafetyd-rundir
 depends-on: early-filesystems
 depends-on: udevd
 depends-on: rootrw

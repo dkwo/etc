@@ -4,7 +4,7 @@ log-type = buffer
 restart = false
 run-as = _wpas
 
-depends-on: wpa_supplicant-pre
+depends-ms: wpa_supplicant-rundir
 depends-on: early-filesystems
 depends-on: udevd
 depends-on: rootrw

@@ -4,7 +4,7 @@ log-type = buffer
 restart = false
 
 depends-on: wpa_supplicant
-depends-on: dhcpcd-pre
+depends-ms: dhcpcd-rundir
 
 run-as = _dhcpcd
 options: no-new-privs

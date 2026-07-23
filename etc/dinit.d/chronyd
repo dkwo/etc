@@ -5,4 +5,4 @@ options: no-new-privs
 capabilities = ^cap_sys_time,^cap_net_bind_service
 log-type = buffer
 depends-on: dhcpcd
-depends-on: chronyd-pre
+depends-ms: chronyd-rundir
