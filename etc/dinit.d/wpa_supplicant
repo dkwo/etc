@@ -1,7 +1,7 @@
 type = process
 command = /usr/bin/wpa_supplicant -i wlp1s0f0 -c /etc/wpa_supplicant/wpa_supplicant.conf -D nl80211
 log-type = buffer
-restart = false
+restart = true
 run-as = _wpas
 
 depends-ms: wpa_supplicant-rundir
