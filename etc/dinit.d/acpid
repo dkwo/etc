@@ -1,0 +1,8 @@
+type = process
+command = /usr/bin/acpid -f
+log-type = buffer
+
+depends-on: early-filesystems
+depends-on: udevd
+depends-on: rootrw
+waits-for: udev-settle
