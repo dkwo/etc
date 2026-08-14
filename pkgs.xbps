@@ -8,8 +8,7 @@ xcursor-plan9
 fend?
 fim?
 vv?
-qt5-wayland?
-apparmor?
+qt5-wayland? drop
 
 
 # system packages
