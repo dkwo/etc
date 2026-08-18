@@ -1,5 +1,5 @@
 type = process
-command = /usr/bin/wpa_supplicant -i wlp1s0f0 -c /etc/wpa_supplicant/wpa_supplicant.conf -D nl80211
+command = /usr/bin/wpa_supplicant -i wlp1s0f0 -c /etc/wpa_supplicant/wpa_supplicant.conf -I /etc/wpa_supplicant/wpa_secrets.conf -D nl80211
 log-type = buffer
 restart = true
 run-as = _wpas
