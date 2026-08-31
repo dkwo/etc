@@ -1,5 +1,5 @@
 type = process
-command = /usr/bin/syslog-ng -F -e -f /etc/syslog-ng/syslog-ng.conf
+command = /usr/bin/syslog-ng -F -e -f /etc/syslog-ng/syslog-ng.conf -p /run/syslogd.pid -c /run/syslog-ng.ctl
 smooth-recovery = true
 logfile = /var/log/syslog-ng.log
 options = starts-log
