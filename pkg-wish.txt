@@ -1,8 +1,13 @@
-fzf
+restic
+
+crudeoauth
+aerc
 mblaze
+himalaya
+
+fzf
 muvm
 age-sep
-himalaya
 cdist
 svlog
 tex-fmt
