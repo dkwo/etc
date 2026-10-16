@@ -5,6 +5,8 @@ aerc
 mblaze
 himalaya
 
+ChiPass
+
 fzf
 muvm
 age-sep
