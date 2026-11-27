@@ -1,7 +1,7 @@
 CONFIG=/etc/m1n1.conf
 PAYLOAD=kernel
 BOOT=/boot
-DTBS=${BOOT}/dtbs/"dtbs-${VERSION}"/apple/t8112-j473.dtb
+DTBS=${BOOT}/dtbs/"dtbs-${VERSION}"/apple/t...-j....dtb
 U_BOOT=/usr/lib/asahi-boot/u-boot-nodtb.bin
 M1N1=/usr/lib/asahi-boot/m1n1.bin
 M1N1_T=/boot/efi/m1n1
